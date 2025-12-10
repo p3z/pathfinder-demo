@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pathfinder – Turn Ideas Into Build-Ready Plans</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="logo-lockup">
+        <div class="logo-mark" aria-hidden="true">
+          <span class="logo-orbit"></span>
+          <span class="logo-core"></span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">Pathfinder</span>
+          <span class="logo-subtitle">Project definition workspace</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="#why">Why Pathfinder</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#demos">Project demos</a></li>
+          <li><a href="#capabilities">Capabilities</a></li>
+          <li><a href="#who-for">Who it’s for</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a class="btn btn-ghost" href="docs/viewer.html">View docs</a>
+        <a class="btn btn-primary" href="/">Open app</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">For product, delivery, and engineering leaders</p>
+          <h1>Turn messy project ideas into clear, build‑ready plans.</h1>
+          <p class="hero-body">
+            Pathfinder is a guided workspace that captures requirements through conversation, turns them into a single
+            Task Definition Document, and keeps developers and stakeholders aligned from the first message to the final
+            build.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/">Start a project</a>
+            <button class="btn btn-secondary" data-scroll-target="#how-it-works">See how it works</button>
+          </div>
+          <dl class="hero-metrics" aria-label="Typical outcomes teams see with Pathfinder">
+            <div class="metric">
+              <dt>Less back‑and‑forth</dt>
+              <dd>Requirements captured once in a shared, living document.</dd>
+            </div>
+            <div class="metric">
+              <dt>Fewer surprises</dt>
+              <dd>Every decision is visible before any code is generated.</dd>
+            </div>
+            <div class="metric">
+              <dt>Faster cycles</dt>
+              <dd>Go from idea to buildable plan in a single session.</dd>
+            </div>
+          </dl>
+        </div>
+        <aside class="hero-panel" aria-label="High-level view of the Pathfinder flow">
+          <div class="panel-glass">
+            <div class="panel-header">
+              <span class="pill pill-live">
+                <span class="pill-dot"></span>
+                Live project
+              </span>
+              <span class="pill pill-muted">Single source of truth</span>
+            </div>
+            <ol class="flow-steps">
+              <li class="flow-step">
+                <span class="flow-badge">1</span>
+                <div>
+                  <h3>Stakeholder chat</h3>
+                  <p>Capture goals, risks, and constraints in plain language.</p>
+                </div>
+              </li>
+              <li class="flow-step">
+                <span class="flow-badge">2</span>
+                <div>
+                  <h3>Task Definition Document</h3>
+                  <p>A living spec that updates as the conversation evolves.</p>
+                </div>
+              </li>
+              <li class="flow-step">
+                <span class="flow-badge">3</span>
+                <div>
+                  <h3>Developer and preview‑first build</h3>
+                  <p>Engineers refine the Developer TDD, generate a static HTML/CSS/JS preview from it, and then run an automated loop that translates that preview into implementation code in the chosen stack.</p>
+                </div>
+              </li>
+            </ol>
+            <div class="panel-footer">
+              <div class="status-label">
+                <span class="status-pulse" aria-hidden="true"></span>
+                TDD status: <strong>Ready for build</strong>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="why">
+        <div class="section-header">
+          <h2>Why teams use Pathfinder</h2>
+          <p>
+            Pathfinder gives you a reliable way to go from “we have an idea” to “we know exactly what to build” without
+            long email threads, lost notes, or conflicting documents.
+          </p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>Shared understanding from day one</h3>
+            <p>
+              Capture what success looks like in a structured Task Definition Document that everyone can see, question,
+              and refine before any work starts.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Less rework, more delivery</h3>
+            <p>
+              By separating stakeholder intent, technical design, and implementation tasks, Pathfinder reduces costly
+              misalignment between business and engineering.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Audit‑ready decisions</h3>
+            <p>
+              Every clarification, trade‑off, and assumption is recorded alongside the project. It is easy to revisit
+              why a decision was made or what changed between builds.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="how-it-works">
+        <div class="section-header">
+          <h2>How Pathfinder works</h2>
+          <p>
+            The app is organised into modes that mirror how real teams work: first clarify the problem, then shape the
+            solution, then execute in a controlled way.
+          </p>
+        </div>
+
+        <div class="mode-switcher" aria-label="Explore Pathfinder modes">
+          <div class="mode-tabs" role="tablist">
+            <button class="mode-tab is-active" role="tab" aria-selected="true" data-mode="stakeholder">
+              Stakeholder
+            </button>
+            <button class="mode-tab" role="tab" aria-selected="false" data-mode="developer">
+              Developer
+            </button>
+            <button class="mode-tab" role="tab" aria-selected="false" data-mode="itemise">
+              Itemise
+            </button>
+          </div>
+          <div class="mode-panels">
+            <article class="mode-panel is-active" data-mode-panel="stakeholder">
+              <h3>Stakeholder mode – capture the “why” and “what”</h3>
+              <p>
+                Nontechnical stakeholders describe goals, constraints, and examples in everyday language. Pathfinder
+                guides the conversation with clarifying questions and gradually fills out a Task Definition Document.
+              </p>
+              <ul>
+                <li>Keep the conversation and the evolving document side‑by‑side.</li>
+                <li>See how close you are to a “ready” specification with a simple readiness bar.</li>
+                <li>Download the final stakeholder document to share with other teams or vendors.</li>
+              </ul>
+            </article>
+
+            <article class="mode-panel" data-mode-panel="developer">
+              <h3>Developer mode – turn intent into a technical plan</h3>
+              <p>
+                Once stakeholder requirements are clear, engineers use Developer mode to decide architecture, APIs, data
+                flows, and constraints, without losing sight of the original goals.
+              </p>
+              <ul>
+                <li>Highlight open questions and risks before work begins.</li>
+                <li>Produce a developer‑friendly Task Definition Document aligned with the stakeholder version.</li>
+                <li>Lock in a plan that downstream tools and developers can trust.</li>
+              </ul>
+            </article>
+
+            <article class="mode-panel" data-mode-panel="itemise">
+              <h3>Itemise mode – split AI work from human work</h3>
+              <p>
+                Pathfinder separates tasks that can be safely automated from those that require human judgment, giving
+                you a clear view of what the AI should handle and what stays with your team.
+              </p>
+              <ul>
+                <li>Create an <strong>LLM build plan</strong> for code the system can generate or update.</li>
+                <li>Create a <strong>Developer actions plan</strong> for steps like deployments and config changes.</li>
+                <li>Feed the LLM build plan into an automated loop that reads the static preview and Developer TDD to generate implementation code, while previews reuse the same checks on every run.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <ol class="timeline-list" aria-label="Project journey in Pathfinder">
+            <li class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>1. Start a project</h3>
+                <p>
+                  Create a new project in Pathfinder for each initiative. Everything—conversations, documents, builds,
+                  and previews—stays organised under that project.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>2. Capture stakeholder intent</h3>
+                <p>
+                  Use Stakeholder mode to turn meetings and loose ideas into a structured Task Definition Document that
+                  can be shared, reviewed, and signed off.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>3. Design the solution</h3>
+                <p>
+                  Switch to Developer mode to define how the solution should work technically, including interfaces,
+                  constraints, and integration points.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>4. Itemise and run preview‑first builds</h3>
+                <p>
+                  In Itemise mode, split work between the automated loop and your team. The loop reads the static HTML/CSS/JS preview and LLM build plan to generate code into versioned output folders, and previews apply the same checks every time so results stay predictable.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>5. Preview, iterate, and export</h3>
+                <p>
+                  Use previews, file browsing, and exports to review each build, capture feedback, and hand off a
+                  complete project directory when you are ready.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="demos">
+        <div class="section-header">
+          <h2>Project demo videos</h2>
+          <p>
+            Short walkthroughs of Pathfinder turning real project ideas into Task Definition Documents, itemised build
+            plans, and previewable outputs.
+          </p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>From idea to Developer TDD</h3>
+            <p>Follow a project from the first stakeholder message through to a complete Developer Task Definition Document.</p>
+            <video class="demo-video" controls preload="metadata" src="/videos/project-demo-stakeholder-to-developer.mp4"></video>
+          </article>
+          <article class="card">
+            <h3>Itemise and preview-first build</h3>
+            <p>See how the Itemise LLM build plan and static preview feed the automated stack translation loop.</p>
+            <video class="demo-video" controls preload="metadata" src="/videos/project-demo-itemise-and-build.mp4"></video>
+          </article>
+          <article class="card">
+            <h3>Reviewing previews and artefacts</h3>
+            <p>Watch a run-through of previews, file browser, and exports on a generated project.</p>
+            <video class="demo-video" controls preload="metadata" src="/videos/project-demo-previews-and-exports.mp4"></video>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="capabilities">
+        <div class="section-header">
+          <h2>Key capabilities at a glance</h2>
+          <p>Everything in Pathfinder is designed to keep context, decisions, and code in one place.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card card-accent">
+            <h3>Projects and slugs</h3>
+            <p>
+              Keep each initiative isolated under its own project, with predictable folder names that make it easy to
+              track builds and exports.
+            </p>
+          </article>
+          <article class="card card-accent">
+            <h3>Task Definition Documents</h3>
+            <p>
+              Generate stakeholder, developer, and itemised Task Definition Documents automatically as conversations
+              progress. Each document can be downloaded at any time.
+            </p>
+          </article>
+          <article class="card card-accent">
+            <h3>Preview‑first loop</h3>
+            <p>
+              Use a preview‑first loop that generates a static HTML/CSS/JS preview from the Developer TDD, translates that preview into code in timestamped output directories with live progress and file‑level events, and runs the same preview checks each time so you avoid inconsistent results.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Previews</h3>
+            <p>
+              Run previews against build outputs to get file trees, diffs, summaries, and, when available, richer
+              checks like HTTP responses or test runs.
+            </p>
+          </article>
+          <article class="card">
+            <h3>File browser with AI assist</h3>
+            <p>
+              Inspect, edit, and create files directly in the browser. Ask the AI to propose changes, then review and
+              apply them line‑by‑line.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Exports</h3>
+            <p>
+              Export a complete project—including Task Definition Documents, builds, previews, and artefacts—as a single
+              archive ready for developers or vendors.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="who-for">
+        <div class="section-header">
+          <h2>Built for cross‑functional teams</h2>
+          <p>Pathfinder fits into your existing ways of working instead of forcing a new one.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>Product and business owners</h3>
+            <p>
+              Turn stakeholder conversations into a single, reviewable document that captures goals, non‑negotiables,
+              and constraints without needing technical jargon.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Engineering leaders</h3>
+            <p>
+              Give your teams clear, agreed requirements and a space to document technical decisions, risks, and trade
+              offs before code is written.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Consultancies and agencies</h3>
+            <p>
+              Use Pathfinder as a repeatable way to capture client briefs, scope work, and keep a traceable record of
+              what was promised and delivered.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="faq">
+        <div class="section-header">
+          <h2>Frequently asked questions</h2>
+          <p>Short answers to common questions from nontechnical stakeholders.</p>
+        </div>
+        <div class="faq">
+          <details class="faq-item">
+            <summary>Is Pathfinder a replacement for our project management tool?</summary>
+            <p>
+              Pathfinder focuses on defining what should be built, not tracking every task. Many teams use it alongside
+              their existing ticketing or project management tools.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Do stakeholders need to understand technical details?</summary>
+            <p>
+              No. Stakeholders can describe goals and constraints in plain language. Pathfinder and your developers then
+              translate that into a technical plan.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>How does Pathfinder help with risk and compliance?</summary>
+            <p>
+              Because every decision and clarification is captured in Task Definition Documents and project history, it
+              is easier to show what was agreed, when, and why.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Can we export our work if we move to another tool?</summary>
+            <p>
+              Yes. Each project can be exported as a complete directory containing Task Definition Documents, build
+              outputs, preview data, and supporting files.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section section-cta">
+        <div class="cta-inner">
+          <div>
+            <h2>Ready to make your next project easier to ship?</h2>
+            <p>
+              Use Pathfinder to capture requirements once, align stakeholders and developers, and generate build‑ready
+              outputs you can trust.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="/">Open Pathfinder</a>
+            <a class="btn btn-ghost" href="docs/viewer.html">Browse documentation</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-mark small" aria-hidden="true">
+            <span class="logo-orbit"></span>
+            <span class="logo-core"></span>
+          </span>
+          <span class="footer-text">Pathfinder · Project definition workspace</span>
+        </div>
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
