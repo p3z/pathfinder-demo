@@ -13,8 +13,33 @@
     <header class="site-header">
       <div class="logo-lockup">
         <div class="logo-mark" aria-hidden="true">
-          <span class="logo-orbit"></span>
-          <span class="logo-core"></span>
+          <svg class="logo-svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="logo-ring-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#38bdf8" />
+                <stop offset="100%" stop-color="#1d4ed8" />
+              </linearGradient>
+              <linearGradient id="logo-arm-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ec4899" />
+                <stop offset="100%" stop-color="#8b5cf6" />
+              </linearGradient>
+              <linearGradient id="logo-needle-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f97316" />
+                <stop offset="100%" stop-color="#facc15" />
+              </linearGradient>
+            </defs>
+            <!-- Outer ring -->
+            <circle cx="32" cy="32" r="22" fill="none" stroke="url(#logo-ring-gradient)" stroke-width="6"
+              stroke-linecap="round" />
+            <!-- Compass arms -->
+            <path d="M32 4 L28 22 L32 26 L36 22 Z" fill="url(#logo-arm-gradient)" />
+            <path d="M32 60 L28 42 L32 38 L36 42 Z" fill="url(#logo-arm-gradient)" />
+            <path d="M4 32 L22 28 L26 32 L22 36 Z" fill="url(#logo-arm-gradient)" />
+            <path d="M60 32 L42 28 L38 32 L42 36 Z" fill="url(#logo-arm-gradient)" />
+            <!-- Central needle -->
+            <path d="M32 14 L40 32 L32 50 L24 32 Z" fill="url(#logo-needle-gradient)" />
+            <circle cx="32" cy="32" r="3" fill="#fef9c3" />
+          </svg>
         </div>
         <div class="logo-text">
           <span class="logo-title">Pathfinder</span>
@@ -441,8 +466,30 @@
       <div class="footer-inner">
         <div class="footer-brand">
           <span class="logo-mark small" aria-hidden="true">
-            <span class="logo-orbit"></span>
-            <span class="logo-core"></span>
+            <svg class="logo-svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="logo-ring-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#38bdf8" />
+                  <stop offset="100%" stop-color="#1d4ed8" />
+                </linearGradient>
+                <linearGradient id="logo-arm-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ec4899" />
+                  <stop offset="100%" stop-color="#8b5cf6" />
+                </linearGradient>
+                <linearGradient id="logo-needle-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f97316" />
+                  <stop offset="100%" stop-color="#facc15" />
+                </linearGradient>
+              </defs>
+              <circle cx="32" cy="32" r="22" fill="none" stroke="url(#logo-ring-gradient)" stroke-width="6"
+                stroke-linecap="round" />
+              <path d="M32 4 L28 22 L32 26 L36 22 Z" fill="url(#logo-arm-gradient)" />
+              <path d="M32 60 L28 42 L32 38 L36 42 Z" fill="url(#logo-arm-gradient)" />
+              <path d="M4 32 L22 28 L26 32 L22 36 Z" fill="url(#logo-arm-gradient)" />
+              <path d="M60 32 L42 28 L38 32 L42 36 Z" fill="url(#logo-arm-gradient)" />
+              <path d="M32 14 L40 32 L32 50 L24 32 Z" fill="url(#logo-needle-gradient)" />
+              <circle cx="32" cy="32" r="3" fill="#fef9c3" />
+            </svg>
           </span>
           <span class="footer-text">Pathfinder · Project definition workspace</span>
         </div>
