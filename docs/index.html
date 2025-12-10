@@ -372,12 +372,34 @@
         </div>
         <div class="faq">
           <details class="faq-item">
+            <summary>What problem does Pathfinder solve?</summary>
+            <p>
+              Pathfinder turns messy, conversational project ideas into a single, implementation‑ready Task Definition Document (TDD), plus an explicit split between what AI can safely build and what humans need to do, reducing rework and misalignment between stakeholders and engineering.
+            </p>
+          </details>
+          <details class="faq-item">
             <summary>Is Pathfinder a replacement for our project management tool?</summary>
             <p>
               Pathfinder focuses on defining what should be built, not tracking every task. Many teams use it alongside
               their existing ticketing or project management tools.
             </p>
           </details>
+          <details class="faq-item">
+            <summary>How is this different from “just using ChatGPT/Copilot”?</summary>
+            <p>
+              Instead of ad‑hoc chats and one‑off code generations, Pathfinder enforces a structured flow—Stakeholder → Developer → Itemise → Build/Preview—where every decision is written into TDDs, LLM work is restricted to file edits in a controlled build directory, and outputs are previewed with diffs and artefacts before adoption.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+                How does Pathfinder keep things safe and auditable?
+            </summary>
+            <p>
+              All work is scoped to per‑project directories, LLMs can only create/edit/delete files there, build outputs go into versioned output/ or build_* folders, previews log exactly what commands/HTTP checks ran, and every step (TDDs, build state, preview artifacts) is stored on disk for later inspection.
+            </p>
+          </details>
+
           <details class="faq-item">
             <summary>Do stakeholders need to understand technical details?</summary>
             <p>
